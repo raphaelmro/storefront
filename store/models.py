@@ -8,6 +8,7 @@ class Promotion(models.Model):
 
 class Collection(models.Model):
     title = models.CharField(max_length=255)
+    featured_product = models.ForeignKey('Product', null=True)
 
 
 class Product(models.Model):
